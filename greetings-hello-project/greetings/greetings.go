@@ -18,8 +18,8 @@ func Hello(name string) (string, error) {
 	// In Go, the := operator is a shortcut for declaring and initializng a variable in one line (Go uses the value on the right to determine the variable's type)
 	// message := fmt.Sprintf("hi, %v. Welcome!", name)
 	// If a name was receiveid, return a greeting that embeds the name
-	var message string
-	message = fmt.Sprintf(randomformat(), name)
+	message := fmt.Sprintf(randomformat(), name)
+	
 
 	return message, nil
 }
@@ -48,8 +48,6 @@ func Hellos(names []string) (map[string]string, error) {
 
 	return messages, nil
 }
-
-
 
 // randoFormat return one fo a set of greeting messages. The returned
 // message is selected at random
